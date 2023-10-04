@@ -1,44 +1,53 @@
 @media (min-width: 1025px) {
-    .h-custom {
-    height: 100vh !important;
+    
     }
+    body{
+        height: 100vh;
+        margin: 20px;
+        padding: 50px;
+        background-color: black;
+    }
+    .main{
+       height: 90vh;
+       background: purple;
+    }
+    section{
+        height: 100vh;
+    }
+    .h-custom{
+        height: 100vh !important;
     }
     .first-portion{
         background-image: url('../img/background.png');
+        
     }
-    .card-registration .select-input.form-control[readonly]:not([disabled]) {
-    font-size: 1rem;
-    line-height: 2.15;
-    padding-left: .75em;
-    padding-right: .75em;
+    .signup-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .card-registration .select-arrow {
-    top: 13px;
+    .signup{
+        display: flex;
+        justify-content: center;
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        width: 70%;
     }
-    
-    .gradient-custom-2 {
-    /* fallback for old browsers */
-    background: #a1c4fd;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(161, 196, 253, 1), rgba(194, 233, 251, 1))
+    .second-portion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: space-around;
     }
-    
-    .bg-indigo {
-    background-color: #4835d4;
-    }
-    @media (min-width: 992px) {
-    .card-registration-2 .bg-indigo {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    }
-    }
-    @media (max-width: 991px) {
-    .card-registration-2 .bg-indigo {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    }
+
+    button{
+        background-color: blue;
+        font: bold;
+        color: white;
+        width: 250px;
+        border: 2px solid blue;
+        border-radius: 20%;
+        padding: 5px;
     }
